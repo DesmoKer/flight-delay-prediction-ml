@@ -1,0 +1,10 @@
+primary_delay_cause,num_flights,percent_of_total_flights,total_delay_minutes,num_flights_sdf,percent_of_total_flights_sdf,total_delay_minutes_sdf
+Cancelled,96315,1.36,0,515,1.07,0
+CarrierDelay,450784,6.37,31990347,2989,6.2,228159
+Diverted,17499,0.25,0,89,0.18,0
+LateAircraftDelay,571752,8.08,38910287,3399,7.05,231863
+NASDelay,369324,5.22,15627536,2395,4.96,90463
+OnTime,5515281,77.91,0,38446,79.69,0
+SecurityDelay,3698,0.05,134701,29,0.06,1052
+WeatherDelay,54406,0.77,5564031,382,0.79,29396
+total,7079061,100,92226902,48244,100,580933

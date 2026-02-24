@@ -99,6 +99,16 @@ img/ -> visualizations used in project
 > - For regression tasks, **Mean Absolute Error (MAE)** was used as the primary metric.  
 >   MAE was chosen due to its robustness to extreme values and outliers, providing a more stable estimate of typical prediction error compared to squared-error metrics.
 
+> [!NOTE]
+> Resampling and Data Leakage Notice:
+>
+> - All over- and under-sampling techniques (including SMOTE used in this project) were applied **strictly to the training data only**, and performed separately within each cross-validation fold.
+>
+> - Resampling was never applied before cross-validation or on the full dataset.  
+>   Performing oversampling prior to data splitting introduces **data leakage**, as synthetic samples may contain information from validation folds.
+>
+> - Applying SMOTE (or any resampling technique) outside the fold-wise training process is a common methodological mistake and can artificially inflate performance metrics.
+
 ## Models Used
 
 **Classification task**
